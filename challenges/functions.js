@@ -19,21 +19,19 @@ let consume = function(a, b, cb) {
 function add (a,b) {
   return a + b;
 }
-//console.log(add(4,3));
 
 function multiply (a,b) {
   return a * b;
 }
-//console.log(multiply(4,3));
 
-function greeting(){
-  return `Hello first-name last-name, nice to meet you`
-}
-//console.log(greeting());
+
+function greeting (first,last) {
+  return `Hello ${first} ${last}, nice to meet you!`;
+};
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-console.log(consume(2,2,add)); // 4
-console.log(consume(10,16,multiply)); // 160
+// console.log(consume(2,2,add)); // 4
+// console.log(consume(10,16,multiply)); // 160
 console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
