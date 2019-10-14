@@ -89,12 +89,21 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
-const contactInfo = [];
+//const contactInfo = [];
+
+const contactInfo = graduates.map(
+  graduates => `${graduates.first_name} ${graduates.email}`
+);
+
 console.log(contactInfo);
 
+///helpppppp
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
+//const uni = [];
+
+const uni = graduates.filter(
+ graduates => graduates.university == "Uni");
 console.log(uni);
 
 
@@ -118,9 +127,15 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 
+//helpppppppppppppppppp
 */
-const animalNames = [];
-console.log(animalNames);
+//const animalNames = [];
+
+// const animalNames = zooAnimals.forEach(
+//   zooAnimals.push => `${zooAnimals.animal_name}`
+
+// );
+// console.log(animalNames);
 
 /* Request 2: .map()    
 
@@ -129,14 +144,22 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 const lowerCase = [];
+zooAnimals.map(zooAnimal => lowerCase.push(zooAnimal.animal_name.toLowerCase()));
+
 console.log(lowerCase); 
+
+// const lowerCase = zooAnimals.map(
+//   zooAnimals => `${zooAnimals.animal_name}`
+// );
 
 /* Request 3: .filter() 
 
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const lowerPopulation = [];
+//const lowerPopulation = [];
+const lowerPopulation = zooAnimals.filter(
+  zooAnimal => zooAnimal.population < 5);
 console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
