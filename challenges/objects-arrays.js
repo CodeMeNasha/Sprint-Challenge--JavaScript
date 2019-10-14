@@ -42,19 +42,19 @@ const velo = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-//console.log(trex.weight);
+console.log(trex.weight);
 
 // What was the diet of a velociraptor?
-//console.log(velo.Diet);
+console.log(velo.Diet);
 
 // How long was a stegosaurus?
-//console.log(steg.Length);
+console.log(steg.Length);
 
 // What time period did tyrannosaurus live in?
-//console.log(trex.Period);
+console.log(trex.Period);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-//console.log(trex.roar());
+console.log(trex.roar());
 
 
 // ==== Arrays ====
@@ -81,7 +81,7 @@ const universities = graduates.map(
   graduates => `${graduates.university}`
 );
 
-//console.log(universities.sort());
+console.log(universities.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -95,15 +95,15 @@ const contactInfo = graduates.map(
   graduates => `${graduates.first_name} ${graduates.email}`
 );
 
-//console.log(contactInfo);
+console.log(contactInfo);
 
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 //const uni = [];
 
-const unisWithUni = graduates.filter(x => (x.university.includes("Uni")));
-//console.log(unisWithUni);
+const Uni = graduates.filter(x => (x.university.includes("Uni")));
+console.log(Uni);
 
 
 // ==== ADVANCED Array Methods ====
@@ -134,7 +134,7 @@ const displayNames = [];
 zooAnimals.forEach(x => displayNames.push(`Name: ${x.animal_name}, Scientific: ${x.scientific_name}`));
 console.log(displayNames);
 // );
-// console.log(animalNames);
+//console.log(animalNames);
 
 /* Request 2: .map()    
 
@@ -145,11 +145,8 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 const lowerCase = [];
 zooAnimals.map(zooAnimal => lowerCase.push(zooAnimal.animal_name.toLowerCase()));
 
-//console.log(lowerCase); 
+console.log(lowerCase); 
 
-// const lowerCase = zooAnimals.map(
-//   zooAnimals => `${zooAnimals.animal_name}`
-// );
 
 /* Request 3: .filter() 
 
@@ -159,7 +156,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 //const lowerPopulation = [];
 const lowerPopulation = zooAnimals.filter(
   zooAnimal => zooAnimal.population < 5);
-//console.log(lowerPopulation);
+console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
 
